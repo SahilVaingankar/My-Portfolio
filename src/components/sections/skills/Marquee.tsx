@@ -51,13 +51,13 @@ const Marquee: React.FC<MarqueeProps> = ({
               {[...items, ...items].map((item, index) => (
                 <div
                   key={index}
-                  className="text-md lg:text-xl flex flex-col justify-center items-center">
+                  className="text-md lg:text-xl flex flex-col justify-center items-center px-0.5">
                   <img
                     src={item.svg}
                     alt={item.title}
-                    className="h-10 w-10 object-cover"
+                    className="h-7 w-7 md:h-10 md:w-10 object-cover"
                   />
-                  <p>{item.title}</p>
+                  <p className="text-sm md:text-md">{item.title}</p>
                 </div>
               ))}
             </div>

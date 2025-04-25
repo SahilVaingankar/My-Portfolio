@@ -13,7 +13,7 @@ const Skills = () => {
         Skills
       </h2>
       <p className="text-white">Technologies I have learned so far</p>
-      <div className="flex flex-col gap-2 landscape-gap-0 w-full h-full items-center">
+      <div className="flex flex-col gap-2 w-full h-full items-center">
         <Marquee
           {...{
             items: items.confirtable,

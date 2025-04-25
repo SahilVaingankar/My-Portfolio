@@ -39,10 +39,10 @@ export const items = {
     rusty : [
         {svg: Mongodb,title : "Mongodb"},
         {svg: Redux,title : "Redux"},
-        {svg: TanStackQuery,title : "TanStack Query"},
+        {svg: TanStackQuery,title : "TanStack"},
         {svg: Figma,title : "Figma"},
         {svg: Storybook,title : "Storybook"},
-        {svg: ReactTesting,title : "React Testing"},
+        {svg: ReactTesting,title : "Testing"},
     ]
     
 }
