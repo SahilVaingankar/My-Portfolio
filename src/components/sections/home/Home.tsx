@@ -5,11 +5,6 @@ const Home = () => {
     <section
       id="Home"
       className="bg-gradient-to-r from-red-600 via-black to-gray-600 flex items-center justify-center min-h-[100svh] py-20 mt-5">
-      {/* <img
-        src={image}
-        alt="laptop image"
-        className="absolute w-full min-h-[80%] max-h-100 object-cover"
-      /> */}
       <div
         className="flex flex-col items-center justify-center py-20 sm:py-30 w-full"
         style={{ backgroundImage: `url(${image})` }}>
