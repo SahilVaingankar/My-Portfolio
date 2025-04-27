@@ -2,13 +2,13 @@ import { FaGithub } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
 
-const Contects = () => {
+const Contacts = () => {
   return (
     <section
       id="Contacts"
-      className="flex flex-col justify-center items-center gap-3 min-h-[100svh] text-white pt-12">
-      <h2 className="font-semibold text-5xl">Contects</h2>
-      <p className="text-xl text-center  ">
+      className="flex flex-col justify-center items-center gap-3 min-h-[100svh] text-white pt-12 sm:pt-38 sm:pb-43">
+      <h2 className="font-semibold text-5xl">Contacts</h2>
+      <p className="text-xl text-center sm:px-10">
         I'm not too active on social media, but always open to connecting for
         right opportunity.
       </p>
@@ -43,4 +43,4 @@ const Contects = () => {
   );
 };
 
-export default Contects;
+export default Contacts;
