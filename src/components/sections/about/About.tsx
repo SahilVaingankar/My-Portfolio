@@ -1,3 +1,5 @@
+import { easeInOut, motion } from "framer-motion";
+
 const About = () => {
   const birthDate = new Date("2001-07-25");
   const currentDate = new Date();
@@ -13,9 +15,16 @@ const About = () => {
     <section
       id="About"
       className="bd-rd-500 grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]">
-      <article
+      <motion.article
         className="col-span-1 row-span-3 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px blue" }}>
+        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px blue" }}
+        whileInView={{
+          x: ["-100%", 0],
+          transition: {
+            duration: 0.3,
+            ease: easeInOut,
+          },
+        }}>
         <h1 className="font-bold border-b border-white pb-1  md:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
           My Journey
         </h1>
@@ -60,13 +69,20 @@ const About = () => {
           with the goal of starting my career in frontend development and
           gradually transition into full-stack devlopment.
         </p>
-      </article>
+      </motion.article>
       {/* <article
         className="col-span-1 row-span-3 border-5 border-red-700 rounded-lg shadow-lg shadow-blue-500"
         style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article> */}
-      <article
+      <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}>
+        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
+        whileInView={{
+          x: ["100%", 0],
+          transition: {
+            duration: 0.3,
+            ease: easeInOut,
+          },
+        }}>
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Hobbies
         </h1>
@@ -83,10 +99,17 @@ const About = () => {
           <li> - Playing Chess.</li>
           <li> - Working out.</li>
         </ul>
-      </article>
-      <article
+      </motion.article>
+      <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}>
+        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
+        whileInView={{
+          x: ["100%", 0],
+          transition: {
+            duration: 0.3,
+            ease: easeInOut,
+          },
+        }}>
         {" "}
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Current Status
@@ -105,10 +128,17 @@ const About = () => {
           <li> - location Goa/India.</li>
           <li> - age {finalAge}.</li>
         </ul>
-      </article>
-      <article
+      </motion.article>
+      <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}>
+        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
+        whileInView={{
+          x: ["100%", 0],
+          transition: {
+            duration: 0.3,
+            ease: easeInOut,
+          },
+        }}>
         {" "}
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Pesonal Experience
@@ -119,7 +149,7 @@ const About = () => {
           identifying and solving various challenges to achieve the desired
           results.
         </p>
-      </article>
+      </motion.article>
       {/* <article
         className="col-2 border-5 border-red-700 rounded-lg shadow-lg shadow-gray-500"
         style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article>
