@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bd-rd-500 grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]">
+      className="grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]">
       <motion.article
         className="col-span-1 row-span-3 rounded-lg shadow-lg p-2"
         style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px blue" }}
@@ -81,9 +81,6 @@ const About = () => {
           gradually transition into full-stack devlopment.
         </p>
       </motion.article>
-      {/* <article
-        className="col-span-1 row-span-3 border-5 border-red-700 rounded-lg shadow-lg shadow-blue-500"
-        style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article> */}
       <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
         {...rightSlideIn}>
@@ -140,12 +137,6 @@ const About = () => {
           results.
         </p>
       </motion.article>
-      {/* <article
-        className="col-2 border-5 border-red-700 rounded-lg shadow-lg shadow-gray-500"
-        style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article>
-      <article
-        className="col-2 border-5 border-red-700 rounded-lg shadow-lg shadow-gray-500"
-        style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article> */}
     </section>
   );
 };
