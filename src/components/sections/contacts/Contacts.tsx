@@ -17,7 +17,7 @@ const Contacts = () => {
           <a
             className="flex flex-col justify-center items-center text-xl"
             href="mailto:sahilvaingankar21@gmail.com">
-            <MdEmail className="h-10 w-10" />
+            <MdEmail className="h-10 w-10" aria-hidden="true" />
             E-mail
           </a>
         </li>
@@ -25,7 +25,7 @@ const Contacts = () => {
           <a
             className="flex flex-col justify-center items-center text-xl"
             href="tel:+91 9518798413">
-            <FiPhoneCall className="h-10 w-10" />
+            <FiPhoneCall className="h-10 w-10" aria-hidden="true" />
             +91 9518798413
           </a>
         </li>
@@ -34,7 +34,7 @@ const Contacts = () => {
           <a
             className="flex flex-col justify-center items-center text-xl"
             href="https://github.com/SahilVaingankar">
-            <FaGithub className="h-10 w-10" />
+            <FaGithub className="h-10 w-10" aria-hidden="true" />
             GitHub
           </a>
         </li>
