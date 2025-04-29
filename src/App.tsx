@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div className="bg-[rgba(0,0,15)] max-w-[100vw] overflow-hidden">
       <Navbar />
-      <Home />
-      <About />
+      {/* <Home />
+      <About /> */}
       {/* <Skills />
       <Projects />
       <Contects /> */}
