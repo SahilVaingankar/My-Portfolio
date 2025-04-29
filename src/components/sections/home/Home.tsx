@@ -4,17 +4,17 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="bg-gradient-to-r from-red-600 via-black to-gray-600 flex items-center justify-center min-h-[100svh] py-20 mt-5">
+      className="bg-gradient-to-r from-red-600 via-black to-gray-600 flex items-center justify-center min-h-[100svh] py-15 overflow-hidden">
       <div
         className="flex flex-col items-center justify-center py-20 sm:py-30 w-full"
         style={{ backgroundImage: `url(${image})` }}>
         <p
-          className="text-4xl xs:text-5xl font-bold text-white"
+          className="text-4xl md:text-5xl font-bold text-white"
           style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}>
           Hii, I Am
         </p>
         <h2
-          className="text-center text-red-600 text-6xl xs:text-7xl font-bold text-shadow-none"
+          className="text-center text-red-600 text-6xl md:text-7xl font-bold text-shadow-none"
           style={{
             textShadow:
               "-1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black,1px 1px 0 black",
