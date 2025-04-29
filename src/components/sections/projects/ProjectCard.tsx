@@ -23,11 +23,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
       <img src={image} alt={title} className="rounded-t-lg" />
-      <div className="p-2">
-        <h2 className="text-sm sm:text-md">{title}</h2>
-        <p className="text-sm sm:text-md">{description}</p>
-        <p className="text-sm sm:text-md">{tech}</p>
-        <div className="flex justify-between">
+      <div className="p-2 space-y-2">
+        <h2 className="text-sm sm:text-md">
+          <span className="font-bold">Title:</span> {title}
+        </h2>
+        <p className="text-sm sm:text-md">
+          <span className="font-bold">Description:</span> {description}
+        </p>
+        <p className="text-sm sm:text-md">
+          <span className="font-bold">Teckstact:</span> {tech.join(", ")}
+        </p>
+        <div className="flex justify-between font-semibold">
           <a href={links[0]} className="text-xs sm:text-sm md:text-md">
             Live Preview
           </a>
@@ -36,11 +42,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
         </div>
       </div>
-      {/* <div className="p-1 text-xs sm:text-md lg:text-lg text-center rounded-b-lg border-t-2 border-red-800 flex justify-center">
-        <a href={links[2]}>Show Site With Code</a>
-      </div> */}
       <button
-        className={`w-full p-1 text-xs sm:text-md lg:text-lg text-center rounded-b-lg border-t-2 border-red-800 ${
+        className={`w-full p-1 font-semibold text-xs sm:text-md lg:text-lg text-center rounded-b-lg border-t-2 border-red-800 ${
           hover
             ? "border-red-700 shadow-red-700 shadow-[-2px_-2px_4px,2px_2px_4px]"
             : ""
