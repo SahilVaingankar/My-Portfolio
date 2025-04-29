@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <section
-      id="About"
+      id="about"
       className="bd-rd-500 grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]">
       <motion.article
         className="col-span-1 row-span-3 rounded-lg shadow-lg p-2"

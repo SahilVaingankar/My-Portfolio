@@ -3,7 +3,7 @@ import image from "./images/laptop-image.jpg";
 const Home = () => {
   return (
     <section
-      id="Home"
+      id="home"
       className="bg-gradient-to-r from-red-600 via-black to-gray-600 flex items-center justify-center min-h-[100svh] py-20 mt-5">
       <div
         className="flex flex-col items-center justify-center py-20 sm:py-30 w-full"

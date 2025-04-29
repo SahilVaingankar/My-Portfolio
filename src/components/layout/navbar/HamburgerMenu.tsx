@@ -61,7 +61,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
             {links.map((item, index) => (
               <li key={item}>
                 <a
-                  href={`#${item}`}
+                  href={`#${item.toLowerCase()}`}
                   ref={(el) => {
                     linkRefs.current[index] = el;
                   }}

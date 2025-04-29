@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 const Contacts = () => {
   return (
     <section
-      id="Contacts"
+      id="contacts"
       className="flex flex-col justify-center items-center gap-3 min-h-[100svh] text-white">
       <h2 className="font-semibold text-5xl mt-5">Contacts</h2>
       <p className="text-xl text-center sm:px-10">

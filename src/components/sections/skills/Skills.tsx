@@ -7,7 +7,7 @@ const Skills = () => {
 
   return (
     <section
-      id="Skills"
+      id="skills"
       className="min-h-[100vh] flex flex-col items-center justify-center gap-3 sm:pt-8 lg:pt-5">
       <h2 className="text-4xl md:text-2xl t-lg font-bold text-white mt-10 ">
         Skills

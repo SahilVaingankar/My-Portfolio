@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const handleKeyDown = (e: KeyboardEvent) => {
       const isArrow = ["ArrowUp", "ArrowDown"];
-      if (isArrow) {
+      if (isArrow.includes(e.key)) {
         e.preventDefault();
       }
     };
@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.addEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
       console.log("removed added");
     };
   }, [isOpen]);
