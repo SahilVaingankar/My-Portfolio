@@ -2,8 +2,8 @@
 // import About from "./components/sections/about/About";
 // import Contacts from "./components/sections/contacts/Contacts";
 // import Home from "./components/sections/home/Home";
-import Projects from "./components/sections/projects/Projects";
-// import Skills from "./components/sections/skills/Skills";
+// import Projects from "./components/sections/projects/Projects";
+import Skills from "./components/sections/skills/Skills";
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
       {/* <Navbar /> */}
       {/* <Home /> */}
       {/* <About /> */}
-      {/* <Skills /> */}
-      <Projects />
+      <Skills />
+      {/* <Projects /> */}
       {/* <Contacts /> */}
     </div>
   );
