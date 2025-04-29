@@ -22,7 +22,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className="group w-40 xs:w-45 sm:w-50 md:50 lg:w-70 xl:80 text-white bg-gray-900 border-2 border-red-800 hover:border-red-700 hover:shadow-red-700 hover:shadow-[-2px_-2px_4px,2px_2px_4px] rounded-lg"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-      <img src={image} alt={title} className="rounded-t-lg" />
+      <img
+        src={image}
+        alt={`${title} project interface image`}
+        className="rounded-t-lg"
+      />
       <div className="p-2 space-y-2">
         <h2 className="text-sm sm:text-md">
           <span className="font-bold">Title:</span> {title}
