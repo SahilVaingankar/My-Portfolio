@@ -11,6 +11,17 @@ const About = () => {
   const finalAge =
     monthDiff < 0 || (monthDiff === 0 && dayDiff < 0) ? age - 1 : age;
 
+  const rightSlideIn = {
+    style: { boxShadow: "-2px -2px 4px red,2px 2px 4px gray" },
+    whileInView: {
+      x: ["100%", 0],
+      transition: {
+        duration: 0.3,
+        ease: easeInOut,
+      },
+    },
+  };
+
   return (
     <section
       id="About"
@@ -75,14 +86,7 @@ const About = () => {
         style={{ textShadow: "-2px -2px 4px blue,2px 2px 4px blue" }}></article> */}
       <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
-        whileInView={{
-          x: ["100%", 0],
-          transition: {
-            duration: 0.3,
-            ease: easeInOut,
-          },
-        }}>
+        {...rightSlideIn}>
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Hobbies
         </h1>
@@ -102,14 +106,7 @@ const About = () => {
       </motion.article>
       <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
-        whileInView={{
-          x: ["100%", 0],
-          transition: {
-            duration: 0.3,
-            ease: easeInOut,
-          },
-        }}>
+        {...rightSlideIn}>
         {" "}
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Current Status
@@ -131,14 +128,7 @@ const About = () => {
       </motion.article>
       <motion.article
         className="col-2 rounded-lg shadow-lg p-2"
-        style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px gray" }}
-        whileInView={{
-          x: ["100%", 0],
-          transition: {
-            duration: 0.3,
-            ease: easeInOut,
-          },
-        }}>
+        {...rightSlideIn}>
         {" "}
         <h1 className="font-bold border-b border-white pb-1 sm:pb-2 text-white text-md sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl">
           Pesonal Experience
