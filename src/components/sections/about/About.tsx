@@ -95,7 +95,7 @@ const About = () => {
           before:left-0 
           before:text-white
           pl-2 lg:pl-3">
-            Solving puzzles (cube, pyramix, Megaminx, etc.).
+            Solving puzzles (Cube, Pyramix, Megaminx, etc.).
           </li>
           <li> - Playing Chess.</li>
           <li> - Working out.</li>
