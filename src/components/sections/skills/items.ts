@@ -10,7 +10,7 @@ import git from "./images/git.svg";
 import Github from "./images/Github.svg";
 import Flask from "./images/Flask.svg";
 import Redux from "./images/Redux.svg";
-import TanStackQuery from "./images/TanStackQuery.svg";
+import TanStackQuery from "./images/TanStackQuery.png";
 import Motion from "./images/Motion.svg";
 import Zustand from "./images/Zustand.svg";
 import Figma from "./images/Figma.png";
