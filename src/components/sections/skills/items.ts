@@ -17,7 +17,18 @@ import Figma from "./images/Figma.png";
 import Storybook from "./images/Storybook.svg";
 import ReactTesting from "./images/ReactTesting.png";
 
-export const items = {
+interface SkillItem {
+  svg: string;
+  title: string;
+}
+
+interface SkillLevels {
+  confirtable: SkillItem[];
+  decent: SkillItem[];
+  rusty: SkillItem[];
+}
+
+export const items: SkillLevels = {
   confirtable: [
     { svg: py, title: "py" },
     { svg: HTML, title: "HTML" },
