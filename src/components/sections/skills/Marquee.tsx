@@ -57,7 +57,9 @@ const Marquee: React.FC<MarqueeProps> = ({
                     alt={item.alt}
                     className="h-7 w-7 md:h-10 md:w-10"
                   />
-                  <p className="text-sm md:text-md">{item.title}</p>
+                  <p className="text-sm md:text-md" aria-hidden="true">
+                    {item.title}
+                  </p>
                 </div>
               ))}
             </div>
