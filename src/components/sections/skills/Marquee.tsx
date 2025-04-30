@@ -55,7 +55,7 @@ const Marquee: React.FC<MarqueeProps> = ({
                   <img
                     src={item.svg}
                     alt={item.title}
-                    className="h-7 w-7 md:h-10 md:w-10 lg:h-15 lg:w-15 object-cover"
+                    className="h-7 w-7 md:h-10 md:w-10"
                   />
                   <p className="text-sm md:text-md">{item.title}</p>
                 </div>
