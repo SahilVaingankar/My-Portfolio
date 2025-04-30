@@ -20,6 +20,7 @@ import ReactTesting from "./images/ReactTesting.png";
 interface SkillItem {
   svg: string;
   title: string;
+  alt: string;
 }
 
 interface SkillLevels {
@@ -30,27 +31,27 @@ interface SkillLevels {
 
 export const items: SkillLevels = {
   confirtable: [
-    { svg: py, title: "py" },
-    { svg: HTML, title: "HTML" },
-    { svg: CSS, title: "CSS" },
-    { svg: JS, title: "JS" },
-    { svg: React, title: "React" },
-    { svg: MySQL, title: "MySQL" },
-    { svg: git, title: "git" },
-    { svg: Github, title: "Github" },
+    { svg: py, title: "py", alt: "Python" },
+    { svg: HTML, title: "HTML", alt: "HTML" },
+    { svg: CSS, title: "CSS", alt: "CSS" },
+    { svg: JS, title: "JS", alt: "Javascript" },
+    { svg: React, title: "React", alt: "React" },
+    { svg: MySQL, title: "MySQL", alt: "MySQL" },
+    { svg: git, title: "Git", alt: "Git" },
+    { svg: Github, title: "Github", alt: "Github" },
   ],
   decent: [
-    { svg: TS, title: "TS" },
-    { svg: Flask, title: "Flask" },
-    { svg: Motion, title: "Motion" },
-    { svg: Zustand, title: "Zustand" },
+    { svg: TS, title: "TS", alt: "Typescript" },
+    { svg: Flask, title: "Flask", alt: "Flask" },
+    { svg: Motion, title: "Motion", alt: "Motion" },
+    { svg: Zustand, title: "Zustand", alt: "Zustand" },
   ],
   rusty: [
-    { svg: Mongodb, title: "Mongodb" },
-    { svg: Redux, title: "Redux" },
-    { svg: TanStackQuery, title: "TanStack" },
-    { svg: Figma, title: "Figma" },
-    { svg: Storybook, title: "Storybook" },
-    { svg: ReactTesting, title: "Testing" },
+    { svg: Mongodb, title: "Mongodb", alt: "Mongodb" },
+    { svg: Redux, title: "Redux", alt: "Redux" },
+    { svg: TanStackQuery, title: "TanStack", alt: "TanStack" },
+    { svg: Figma, title: "Figma", alt: "Figma" },
+    { svg: Storybook, title: "Storybook", alt: "Storybook" },
+    { svg: ReactTesting, title: "Testing", alt: "Testing" },
   ],
 };

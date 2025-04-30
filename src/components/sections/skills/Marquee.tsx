@@ -54,7 +54,7 @@ const Marquee: React.FC<MarqueeProps> = ({
                   className="text-md lg:text-xl flex flex-col justify-center items-center px-0.5">
                   <img
                     src={item.svg}
-                    alt={item.title}
+                    alt={item.alt}
                     className="h-7 w-7 md:h-10 md:w-10"
                   />
                   <p className="text-sm md:text-md">{item.title}</p>
