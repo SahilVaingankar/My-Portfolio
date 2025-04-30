@@ -42,33 +42,33 @@ const About = () => {
         <p className="mt-2 text-white text-xs sm:text-sm md:text-md lg:text-lg xl:text-[1rem] 2xl:text-2xl">
           Hi, I'm Sahil. I started coding two years ago,{" "}
           <span className="text-lime-500">
-            beginning with backend development in Pyton
+            beginning with backend development in Python
           </span>
-          . That's were I learned about the basics of programming along with
-          intermidiate concepts like{" "}
+          . That's where I learned about the basics of programming along with
+          intermediate concepts like{" "}
           <span className="text-lime-500">classes, threading, sockets,</span>{" "}
           working with sql databases using
           <span className="text-lime-500"> SQLAlchemy</span>, how{" "}
           <span className="text-lime-500">encryption and decryption</span> works
           and also learned{" "}
           <span className="text-lime-500">
-            Mongodb but never used that in any of my project as i mostly sticked
+            Mongodb but never used that in any of my project as I mostly sticked
             to sql on the backend.
           </span>
         </p>
 
         <p className="mt-2 text-white text-xs sm:text-sm md:text-md lg:text-lg xl:text-[1rem] 2xl:text-2xl">
-          Over time, i build sevral backend project. One of my most recent
+          Over time, I build sevral backend project. One of my most recent
           project was a chatroom application using threading, sockets and
           SQLAlchemy. While working on it,{" "}
           <span className="text-lime-500">
-            i learned about SQL injections and how to prevent them and keep user
+            I learned about SQL injections and how to prevent them and keep user
             data safe using techniques like hashing and salting.
           </span>
         </p>
 
         <p className="mt-2 text-white text-xs sm:text-sm md:text-md lg:text-lg xl:text-[1rem] 2xl:text-2xl">
-          After that i learned <span className="text-lime-500">Flask</span> and
+          After that I learned <span className="text-lime-500">Flask</span> and
           through that, I was introdused to frontend development. I started with
           basics <span className="text-lime-500">(HTML, CSS, JS)</span> and
           later moved on to <span className="text-lime-500">React</span>. Since
@@ -78,7 +78,7 @@ const About = () => {
           </span>{" "}
           I am currently seeking opportunities to work on real-word projects,
           with the goal of starting my career in frontend development and
-          gradually transition into full-stack devlopment.
+          gradually transition into full-stack development.
         </p>
       </motion.article>
       <motion.article
