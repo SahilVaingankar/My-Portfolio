@@ -1,7 +1,13 @@
-import { useState } from "react";
-
-const DesktopLinks = ({ links }: { links: string[] }) => {
-  const [selectedLink, setSelectedLink] = useState<string>("");
+const DesktopLinks = ({
+  links,
+  selectedLink,
+  setSelectedLink,
+}: {
+  links: string[];
+  selectedLink: string;
+  setSelectedLink: (item: string) => void;
+}) => {
+  // const [selectedLink, setSelectedLink] = useState<string>("Home");
 
   return (
     <>
@@ -11,7 +17,7 @@ const DesktopLinks = ({ links }: { links: string[] }) => {
             <a
               href={`#${item.toLowerCase()}`}
               onClick={() => setSelectedLink(item)}
-              className={` p-2 rounded-lg transition-colors duration-300 hover:bg-gray-800 visited:text-red-500 ${
+              className={` p-2 rounded-lg transition-colors duration-300 hover:bg-gray-800 ${
                 item === selectedLink ? "text-red-500" : "text-white"
               }`}>
               {item}

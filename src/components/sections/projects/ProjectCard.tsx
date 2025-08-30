@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 interface ProjectCardProps {
-  image: string;
+  images: string[];
   title: string;
   description: string;
   tech: string[];
@@ -9,7 +10,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
-  image,
+  images,
   title,
   description,
   tech,
@@ -19,17 +20,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div
-      className="group w-40 xs:w-45 sm:w-50 md:50 lg:w-70 xl:80 text-white bg-gray-900 border-2 border-red-800 hover:border-red-700 hover:shadow-red-700 hover:shadow-[-2px_-2px_4px,2px_2px_4px] rounded-lg"
+      className="flex flex-col justify-between min-h-112 md:m-auto group w-full xs:w-45 sm:w-50 md:50 lg:w-70 xl:80 text-white bg-gray-900 border-2 border-red-800 hover:border-red-700 hover:shadow-red-700 hover:shadow-[-2px_-2px_4px,2px_2px_4px] rounded-lg "
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-      <img
-        src={image}
-        alt={`${title} project interface image`}
-        className="rounded-t-lg"
-      />
-      <div className="p-2 space-y-2">
-        <h2 className="text-sm sm:text-md">
-          <span className="font-bold">Title:</span> {title}
+      <div className="flex overflow-hidden">
+        <motion.div
+          animate={{
+            x: images.map((_, i) => `-${i * 100}%`),
+          }}
+          transition={{
+            duration: images.length * 1.5,
+            ease: "easeInOut",
+            repeat: Infinity,
+          }}
+          className="flex">
+          {images.map((image, i) => (
+            <img
+              key={i}
+              src={image}
+              alt={`${title} project interface image`}
+              className="rounded-t-lg"
+            />
+          ))}
+        </motion.div>
+      </div>
+      <div className="p-2 gap-2 flex flex-col justify-between grow">
+        <h2 className="text-sm sm:text-md flex w-full justify-center">
+          <strong className="text-green-600 tracking-widest">{title}</strong>
         </h2>
         <p className="text-sm sm:text-md">
           <span className="font-bold">Description:</span> {description}
@@ -38,10 +55,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span className="font-bold">Teckstact:</span> {tech.join(", ")}
         </p>
         <div className="flex justify-between font-semibold">
-          <a href={links[0]} className="text-xs sm:text-sm md:text-md">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={links[0]}
+            className="text-xs sm:text-sm md:text-md">
             Live Preview
           </a>
-          <a href={links[1]} className="text-xs sm:text-sm md:text-md">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={links[1]}
+            className="text-xs sm:text-sm md:text-md">
             View Code
           </a>
         </div>

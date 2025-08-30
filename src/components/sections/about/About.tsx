@@ -1,6 +1,16 @@
 import { easeInOut, motion } from "framer-motion";
+import { useContext } from "react";
+import { NavContext } from "../../NavContextProvider";
 
 const About = () => {
+  const context = useContext(NavContext);
+
+  if (!context) {
+    throw new Error("NavContext must be used within a NavContextProvider");
+  }
+
+  const { setSelectedLink } = context;
+
   const birthDate = new Date("2001-07-25");
   const currentDate = new Date();
 
@@ -23,9 +33,11 @@ const About = () => {
   };
 
   return (
-    <section
+    <motion.section
       id="about"
-      className="grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]">
+      className="grid grid-col-2 grid-row-3 gap-4 p-5 pt-15 min-h-[100svh]"
+      onViewportEnter={() => setSelectedLink("About")}
+      viewport={{ once: false, amount: 0.5 }}>
       <motion.article
         className="col-span-1 row-span-3 rounded-lg shadow-lg p-2"
         style={{ boxShadow: "-2px -2px 4px red,2px 2px 4px blue" }}
@@ -50,11 +62,7 @@ const About = () => {
           working with sql databases using
           <span className="text-lime-500"> SQLAlchemy</span>, how{" "}
           <span className="text-lime-500">encryption and decryption</span> works
-          and also learned{" "}
-          <span className="text-lime-500">
-            Mongodb but never used that in any of my project as I mostly sticked
-            to sql on the backend.
-          </span>
+          and also learned <span className="text-lime-500">Mongodb.</span>
         </p>
 
         <p className="mt-2 text-white text-xs sm:text-sm md:text-md lg:text-lg xl:text-[1rem] 2xl:text-2xl">
@@ -137,7 +145,7 @@ const About = () => {
           results.
         </p>
       </motion.article>
-    </section>
+    </motion.section>
   );
 };
 

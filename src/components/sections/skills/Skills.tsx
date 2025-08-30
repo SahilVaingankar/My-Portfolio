@@ -1,14 +1,27 @@
+import { useContext } from "react";
 import Marquee from "./Marquee";
 import { items } from "./items";
+import { NavContext } from "../../NavContextProvider";
+import { motion } from "framer-motion";
 
 const Skills = () => {
+  const context = useContext(NavContext);
+
+  if (!context) {
+    throw new Error("NavContext must be used within a NavContextProvider");
+  }
+
+  const { setSelectedLink } = context;
+
   const duration = 15;
 
   return (
-    <section
+    <motion.section
       id="skills"
-      className="min-h-[100vh] flex flex-col items-center justify-center gap-3 sm:pt-8 lg:pt-5">
-      <h2 className="text-4xl md:text-2xl t-lg font-bold text-white mt-10 ">
+      className="min-h-[100vh] flex flex-col items-center justify-center gap-3 sm:pt-8 lg:pt-5"
+      onViewportEnter={() => setSelectedLink("Skills")}
+      viewport={{ once: false, amount: 0.5 }}>
+      <h2 className="text-4xl md:text-2xl lg:text-lg font-bold text-white mt-10 ">
         Skills
       </h2>
       <p className="text-white">Technologies I have learned so far</p>
@@ -39,7 +52,7 @@ const Skills = () => {
           }}
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

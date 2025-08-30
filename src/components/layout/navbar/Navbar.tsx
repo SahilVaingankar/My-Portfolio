@@ -1,8 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import DesktopLinks from "./DesktopLinks";
+import { NavContext } from "../../NavContextProvider";
 
 const Navbar = () => {
+  const context = useContext(NavContext);
+
+  if (!context) {
+    throw new Error("NavContext must be used within a RunningStateProvider");
+  }
+
+  const { selectedLink, setSelectedLink } = context;
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [activeLinkIndex, setActiveLinkIndex] = useState<number>(-1);
   const links: string[] = ["Home", "About", "Skills", "Projects", "Contacts"];
@@ -58,7 +67,7 @@ const Navbar = () => {
             />
 
             {/* DESKTOP LINKS */}
-            <DesktopLinks {...{ links }} />
+            <DesktopLinks {...{ links, selectedLink, setSelectedLink }} />
           </nav>
         </div>
       </header>

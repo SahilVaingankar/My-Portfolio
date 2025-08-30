@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/navbar/Navbar";
+import { NavContextProvider } from "./components/NavContextProvider";
 import About from "./components/sections/about/About";
 import Contacts from "./components/sections/contacts/Contacts";
 import Home from "./components/sections/home/Home";
@@ -8,12 +9,14 @@ import Skills from "./components/sections/skills/Skills";
 const App = () => {
   return (
     <div className="bg-[rgba(0,0,15)] max-w-[100vw] overflow-hidden">
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contacts />
+      <NavContextProvider>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contacts />
+      </NavContextProvider>
     </div>
   );
 };
