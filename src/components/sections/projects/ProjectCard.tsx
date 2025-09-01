@@ -71,14 +71,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
         </div>
       </div>
-      <button
+      <a
+        href={links[1]}
         className={`w-full p-1 font-semibold text-xs sm:text-md lg:text-lg text-center rounded-b-lg border-t-2 border-red-800 ${
           hover
             ? "border-red-700 shadow-red-700 shadow-[-2px_-2px_4px,2px_2px_4px]"
             : ""
-        } flex justify-center hover:text-white lg:hover:text-red-400 hover:bg-[#5f5f5f5d] cursor-pointer`}>
+        } flex justify-center hover:text-white lg:hover:text-red-400 hover:bg-[#5f5f5f5d] cursor-pointer`}
+        onClick={() => {
+          window.open(links[0], "_blank");
+        }}>
         Show Site With Code
-      </button>
+      </a>
+      {/* <button
+        className={`w-full p-1 font-semibold text-xs sm:text-md lg:text-lg text-center rounded-b-lg border-t-2 border-red-800 ${
+          hover
+            ? "border-red-700 shadow-red-700 shadow-[-2px_-2px_4px,2px_2px_4px]"
+            : ""
+        } flex justify-center hover:text-white lg:hover:text-red-400 hover:bg-[#5f5f5f5d] cursor-pointer`}
+        onClick={() => {
+          window.open(links[0], "_blank");
+          window.open(links[1], "_blank");
+        }}>
+        Show Site With Code
+      </button> */}
     </div>
   );
 };

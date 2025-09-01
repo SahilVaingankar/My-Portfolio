@@ -53,7 +53,10 @@ const Projects = () => {
             description:
               "A web app that tracks how long a user takes to complete a generated text.",
             tech: ["React", "Typescript", "Tailwind"],
-            links: ["a", "b", "c"],
+            links: [
+              "https://type-fast-puce.vercel.app/",
+              "https://github.com/SahilVaingankar/TypeFast",
+            ],
           }}
         />
         <ProjectCard
@@ -75,7 +78,6 @@ const Projects = () => {
             links: [
               "https://e-commerce-website-steel-eight.vercel.app",
               "https://github.com/SahilVaingankar/E-CommerceWebsite",
-              "c",
             ],
           }}
         />
@@ -93,11 +95,7 @@ const Projects = () => {
             title: "Portfolio website",
             description: "Current Portfolio Website.",
             tech: ["React", "Typescript", "Tailwind", "Motion"],
-            links: [
-              "/",
-              "https://github.com/SahilVaingankar/My-Portfolio",
-              "c",
-            ],
+            links: ["/", "https://github.com/SahilVaingankar/My-Portfolio"],
           }}
         />
       </div>
