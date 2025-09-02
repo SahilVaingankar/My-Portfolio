@@ -52,7 +52,7 @@ const Projects = () => {
             title: "TypeFast",
             description:
               "A web app that tracks how long a user takes to complete a generated text.",
-            tech: ["React", "Typescript", "Tailwind"],
+            tech: ["MERN Stack", "Typescript", "Tailwind"],
             links: [
               "https://type-fast-puce.vercel.app/",
               "https://github.com/SahilVaingankar/TypeFast",
