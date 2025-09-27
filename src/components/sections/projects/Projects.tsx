@@ -22,6 +22,7 @@ import fasttypeHomeImg from "../../../assets/typefast/home.png";
 import fasttypeHomeImg2 from "../../../assets/typefast/home2.png";
 import endgameImg from "../../../assets/typefast/endgame.png";
 import codeDemoImg from "../../../assets/typefast/code.png";
+import Note from "./Note";
 
 const Projects = () => {
   const context = useContext(NavContext);
@@ -38,7 +39,8 @@ const Projects = () => {
       className="flex flex-col justify-center items-center min-h-[100svh] pb-6 sm:py-10 "
       onViewportEnter={() => setSelectedLink("Projects")}
       viewport={{ once: false, amount: 0.5 }}>
-      <h2 className="text-white font-bold text-xl pt-15 ">Projects</h2>
+      <h2 className="text-white font-bold text-xl pt-15 md:pt-5 ">Projects</h2>
+      <Note />
       <div className="bg-[#5f5f5f5d] p-2 m-2 mt-3 rounded-lg flex justify-center flex-wrap sm:flex-nowrap items-center gap-2 ">
         <ProjectCard
           {...{
